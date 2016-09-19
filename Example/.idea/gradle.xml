@@ -9,6 +9,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/FrescoExample" />
+            <option value="$PROJECT_DIR$/commonlib" />
+            <option value="$PROJECT_DIR$/rxexample" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
