@@ -10,10 +10,13 @@ import android.widget.Button;
 public class MainAActivity extends AppCompatActivity {
 
     private Button button;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_a);
+
 
         Log.e(MainAActivity.class.getSimpleName() , "============onCreate");
 

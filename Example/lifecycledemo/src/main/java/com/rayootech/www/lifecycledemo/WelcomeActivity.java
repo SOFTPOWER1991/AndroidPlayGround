@@ -1,7 +1,11 @@
 package com.rayootech.www.lifecycledemo;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
+import android.content.pm.PackageManager;
+import android.content.res.Configuration;
 import android.os.Bundle;
+import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -17,7 +21,7 @@ public class WelcomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Log.e(WelcomeActivity.class.getSimpleName() , "============onCreate");
+        Log.e(WelcomeActivity.class.getSimpleName(), "============onCreate====" + dumpTaskAffinity());
 
         textView = (TextView) findViewById(R.id.tv);
 
@@ -40,7 +44,7 @@ public class WelcomeActivity extends AppCompatActivity {
     @Override
     protected void onRestart() {
         super.onRestart();
-        Log.e(WelcomeActivity.class.getSimpleName() , "==========onRestart" );
+        Log.e(WelcomeActivity.class.getSimpleName(), "==========onRestart=====" + dumpTaskAffinity());
     }
 
     @Override
@@ -71,5 +75,51 @@ public class WelcomeActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         Log.e(WelcomeActivity.class.getSimpleName() , "=============onDestroy");
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        Log.e(WelcomeActivity.class.getSimpleName(), "=============onSaveInstanceState");
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState, PersistableBundle outPersistentState) {
+        super.onSaveInstanceState(outState, outPersistentState);
+
+        Log.e(WelcomeActivity.class.getSimpleName(), "PersistableBundle=============onSaveInstanceState");
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        Log.e(WelcomeActivity.class.getSimpleName(), "=============onRestoreInstanceState");
+    }
+
+    @Override
+    public void onRestoreInstanceState(Bundle savedInstanceState, PersistableBundle persistentState) {
+        super.onRestoreInstanceState(savedInstanceState, persistentState);
+
+        Log.e(WelcomeActivity.class.getSimpleName(), "PersistableBundle=============onRestoreInstanceState");
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        Log.e(WelcomeActivity.class.getSimpleName() + "newConfig", newConfig.orientation + "======");
+    }
+
+    protected String dumpTaskAffinity() {
+        try {
+            ActivityInfo info = this.getPackageManager()
+                    .getActivityInfo(getComponentName(), PackageManager.GET_META_DATA);
+
+            return info.taskAffinity;
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        return "==";
     }
 }
