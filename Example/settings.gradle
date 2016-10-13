@@ -1,1 +1,1 @@
-include ':FrescoExample', ':rxexample', ':commonlib'
+include ':FrescoExample', ':rxexample', ':commonlib', ':lifecycledemo'
