@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Example.iml" filepath="$PROJECT_DIR$/Example.iml" />
       <module fileurl="file://$PROJECT_DIR$/FrescoExample/FrescoExample.iml" filepath="$PROJECT_DIR$/FrescoExample/FrescoExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aidlexample/aidlexample.iml" filepath="$PROJECT_DIR$/aidlexample/aidlexample.iml" />
       <module fileurl="file://$PROJECT_DIR$/commonlib/commonlib.iml" filepath="$PROJECT_DIR$/commonlib/commonlib.iml" />
       <module fileurl="file://$PROJECT_DIR$/lifecycledemo/lifecycledemo.iml" filepath="$PROJECT_DIR$/lifecycledemo/lifecycledemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/messengerexample/messengerexample.iml" filepath="$PROJECT_DIR$/messengerexample/messengerexample.iml" />
