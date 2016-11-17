@@ -9,8 +9,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/FrescoExample" />
-            <option value="$PROJECT_DIR$/aidlexample" />
+            <option value="$PROJECT_DIR$/animationexample" />
             <option value="$PROJECT_DIR$/commonlib" />
+            <option value="$PROJECT_DIR$/glideexample" />
             <option value="$PROJECT_DIR$/lifecycledemo" />
             <option value="$PROJECT_DIR$/messengerexample" />
             <option value="$PROJECT_DIR$/processexample" />
