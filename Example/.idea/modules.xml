@@ -7,6 +7,8 @@
       <module fileurl="file://$PROJECT_DIR$/animationexample/animationexample.iml" filepath="$PROJECT_DIR$/animationexample/animationexample.iml" />
       <module fileurl="file://$PROJECT_DIR$/commonlib/commonlib.iml" filepath="$PROJECT_DIR$/commonlib/commonlib.iml" />
       <module fileurl="file://$PROJECT_DIR$/glideexample/glideexample.iml" filepath="$PROJECT_DIR$/glideexample/glideexample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/greendaoexample/greendaoexample.iml" filepath="$PROJECT_DIR$/greendaoexample/greendaoexample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/greendaogenerator/greendaogenerator.iml" filepath="$PROJECT_DIR$/greendaogenerator/greendaogenerator.iml" />
       <module fileurl="file://$PROJECT_DIR$/itemchooseexample/itemchooseexample.iml" filepath="$PROJECT_DIR$/itemchooseexample/itemchooseexample.iml" />
       <module fileurl="file://$PROJECT_DIR$/lifecycledemo/lifecycledemo.iml" filepath="$PROJECT_DIR$/lifecycledemo/lifecycledemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/messengerexample/messengerexample.iml" filepath="$PROJECT_DIR$/messengerexample/messengerexample.iml" />
