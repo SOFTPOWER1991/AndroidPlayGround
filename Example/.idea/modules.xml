@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/greendaogenerator/greendaogenerator.iml" filepath="$PROJECT_DIR$/greendaogenerator/greendaogenerator.iml" />
       <module fileurl="file://$PROJECT_DIR$/itemchooseexample/itemchooseexample.iml" filepath="$PROJECT_DIR$/itemchooseexample/itemchooseexample.iml" />
       <module fileurl="file://$PROJECT_DIR$/lifecycledemo/lifecycledemo.iml" filepath="$PROJECT_DIR$/lifecycledemo/lifecycledemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mediarecordexample/mediarecordexample.iml" filepath="$PROJECT_DIR$/mediarecordexample/mediarecordexample.iml" />
       <module fileurl="file://$PROJECT_DIR$/messengerexample/messengerexample.iml" filepath="$PROJECT_DIR$/messengerexample/messengerexample.iml" />
       <module fileurl="file://$PROJECT_DIR$/processexample/processexample.iml" filepath="$PROJECT_DIR$/processexample/processexample.iml" />
       <module fileurl="file://$PROJECT_DIR$/rxexample/rxexample.iml" filepath="$PROJECT_DIR$/rxexample/rxexample.iml" />

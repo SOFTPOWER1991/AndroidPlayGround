@@ -11,7 +11,7 @@ import org.greenrobot.greendao.annotation.NotNull;
  * Entity mapped to table "NOTE".
  */
 @Entity(indexes = {
-    @Index(value = "text, date DESC", unique = true)
+        @Index(value = "text, date DESC", unique = true)
 })
 public class Note {
 
@@ -20,6 +20,7 @@ public class Note {
 
     @NotNull
     private String text;
+
     private String comment;
     private java.util.Date date;
 
@@ -56,7 +57,9 @@ public class Note {
         return text;
     }
 
-    /** Not-null value; ensure this value is available before it is saved to the database. */
+    /**
+     * Not-null value; ensure this value is available before it is saved to the database.
+     */
     public void setText(@NotNull String text) {
         this.text = text;
     }
