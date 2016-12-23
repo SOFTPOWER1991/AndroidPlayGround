@@ -144,14 +144,17 @@ public class UserActivity extends AppCompatActivity {
     private void addUserInfo() {
         String userid = editText.getText().toString();
 
-        UserIMInfo userIMInfo = new UserIMInfo();
-        userIMInfo.setUserId(userid + "");
-        userIMInfo.setUserName("hha" + Math.random());
-        userIMInfo.setDiease("肝疼");
-        userIMInfo.setSex("女");
-        userIMInfo.setIcon("icon==" + Math.random());
+        for (int index = 0; index < 20; index++) {
+            UserIMInfo userIMInfo = new UserIMInfo();
+            userIMInfo.setUserId(index + "");
+            userIMInfo.setUserName("hha" + Math.random());
+            userIMInfo.setDiease("肝疼");
+            userIMInfo.setSex("女");
+            userIMInfo.setIcon("icon==" + Math.random());
 
-        userIMInfoDao.insert(userIMInfo);
+            userIMInfoDao.insert(userIMInfo);
+        }
+
 
         updateNotes();
     }
@@ -163,9 +166,7 @@ public class UserActivity extends AppCompatActivity {
         public void onNoteClick(int position) {
             UserIMInfo userIMInfo = userInfoAdapter.getUserInfo(position);
 
-//            Long userId = userIMInfo.getId();
-//
-//            userIMInfoDao.deleteByKey(userId);
+            userIMInfoDao.delete(userIMInfo);
 
             updateNotes();
 
