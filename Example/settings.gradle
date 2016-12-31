@@ -1,1 +1,1 @@
-include ':FrescoExample', ':rxexample', ':commonlib', ':lifecycledemo', ':processexample', ':messengerexample', ':glideexample', ':animationexample', ':itemchooseexample', ':greendaoexample', ':greendaogenerator', ':mediarecordexample', ':constraintsexample'
+include ':FrescoExample', ':rxexample', ':commonlib', ':lifecycledemo', ':processexample', ':messengerexample', ':glideexample', ':animationexample', ':itemchooseexample', ':greendaoexample', ':greendaogenerator', ':mediarecordexample', ':constraintsexample', ':morepackage'
